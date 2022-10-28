@@ -1,0 +1,67 @@
+//BOTONERA
+#botoneraNav{
+    background-color: $mainColor;
+    img{
+        width: 180px;
+    }
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                @include texto ($txtMd, 0rem, $secondColor);
+                padding: 0 40px;
+                &:hover{
+                    font-weight: $txtBold;
+                    transform: scale(1.1);
+                    transition: transform 0.5s;
+                }
+            }
+        }
+    }
+    svg{
+        fill: $secondColor;
+        width: 30px;
+    }
+}
+//TÍTULOS-SUBTÍTULOS-PÁRRAFOS
+.h1Titles{
+    @include textoSerif ($txtXl, 2rem, $mainColor);
+    margin: 25px;
+}
+.subH{
+    @include textoSerif ($txtMd, 3rem, $mainColor);
+}
+.txtP{
+    @include texto ($txtSm, 3rem, $mainColor);
+}
+//productos SHOP/COMINGSOON
+.imgProducts{
+    width: 300px;
+    &:hover{
+        transform: scale(1.02);
+        transition: transform 0.9s;
+    }
+}
+.txtFig{
+    @include texto ($txtMd, 5rem, $mainColor);
+    font-weight: $txtBold;
+    text-transform: uppercase;
+    p{
+        @include texto ($txtSm, 0rem, $mainColor);
+        font-weight: $txtRegular;
+    }
+}
+//FOOTER
+footer{
+    background-color: $mainColor;
+    h3{
+        @include texto ($txtSm, 0rem, $secondColor);
+    }
+    img{
+        width: 25px;
+        &:hover{
+            transform: scale(1.2);
+            transition: transform 1s;
+        }
+    }
+}

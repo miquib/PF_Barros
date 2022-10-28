@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+//fonts
+$mainFont: 'Roboto', sans-serif;
+$secondFont: 'Libre Caslon Text', serif;
+//font size
+$txtXl: 2.4rem;
+$txtLg: 2.0rem;
+$txtMd: 1.6rem;
+$txtSm: 1.4rem;
+$txtXs: 1.2rem;
+//font weight
+$txtRegular: 400;
+$txtBold: 700;

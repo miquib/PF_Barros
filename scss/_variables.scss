@@ -1,0 +1,25 @@
+$mainColor: black;
+$secondColor: white;
+$keyColor: rgb(214, 214, 214);
+
+@mixin texto ($fontsize, $interlineado, $color){
+    font-family: $mainFont;
+    font-size: $fontsize;
+    line-height: $interlineado;
+    color: $color;
+    text-align: center;
+}
+@mixin textoSerif ($fontsize, $interlineado, $color){
+    font-family: $secondFont;
+    font-size: $fontsize;
+    line-height: $interlineado;
+    color: $color;
+    text-align: center;
+}
+@mixin flex ($direction, $justify, $align, $wrap){
+    display: flex;
+    direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

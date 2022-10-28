@@ -1,0 +1,53 @@
+@media (min-width: 280px) and (max-width: 437px){
+    .h1Titles{
+        font-size: $txtMd;
+        margin: 10px;
+    }
+    .subH{
+        font-size: $txtSm;
+        line-height: 3rem;
+    }
+    .txtP{
+        font-size: $txtXs;
+        line-height: 2.5rem;
+    }
+    #cajaContacto{
+        @include flex (row, center, center, nowrap);
+        div{
+            font-size: 1rem;
+            form{
+                .inputTxtarea{
+                    padding: 4px;
+                    margin: 4px;
+                }
+                .formBtn{
+                    padding: 3px;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+    //productos SHOP/COMINGSOON
+    .txtFig{
+        font-size: $txtXs;
+        p{
+            font-size: $txtXs;
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 991.5px){
+    #botoneraNav{
+        svg{
+            width: 20px;
+        }
+        ul{
+            li{
+                a{
+                    font-size: $txtMd;
+                    margin: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#cajaContacto{
+    @include flex (row, center, center, nowrap);
+    height: auto;
+    padding-bottom: 20px;
+    div{
+        @include flex (row, center, center, nowrap);
+        @include texto ($txtSm, 2rem, $mainColor);
+        font-family: $mainFont;
+        form{
+            display: flex;
+            flex-direction: column;
+            .inputTxtarea{
+                padding: 10px;
+                margin: 10px;
+            }
+            .formBtn{
+                @include texto ($txtSm, 2rem, $mainColor);
+                padding: 10px;
+                margin: 10px;
+                background-color: $keyColor;
+                border: none;
+                text-decoration: none;
+                &:hover{
+                    font-weight: $txtBold;
+                    transform: scale(1.01);
+                    transition: transform 0.5s;
+                }
+            }
+        }
+    }
+    img{
+        width: 300px;
+        padding: 20px;
+    }
+}
